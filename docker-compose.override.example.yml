@@ -1,0 +1,10 @@
+# Optional. Copy to docker-compose.override.yml (gitignored; Compose loads it automatically).
+# Containers do not read the host's /etc/hosts. If your brokers advertise names that only
+# resolve on your own machine, map every advertised broker name to its IP here.
+services:
+  airflow:
+    extra_hosts:
+      - "bootstrap.example.internal:10.0.0.10"
+      - "broker0.example.internal:10.0.0.11"
+      - "broker1.example.internal:10.0.0.12"
+      - "broker2.example.internal:10.0.0.13"

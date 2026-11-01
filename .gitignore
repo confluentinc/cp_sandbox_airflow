@@ -1,0 +1,5 @@
+.env
+input/
+.DS_Store
+__pycache__/
+docker-compose.override.yml
